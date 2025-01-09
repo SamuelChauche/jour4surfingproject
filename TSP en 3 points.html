@@ -3,54 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Surfing Project en 3 points</title>
+    <title>The Surfing Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://cdn.discordapp.com/attachments/1325776140102795349/1326848433159671858/c3a737a1-7871-4d76-a7ec-22f72ded7547.jpg?ex=6780eb66&is=677f99e6&hm=79b77a223624cb6be78d933db3b579071e8e91660ed174d9b37a80e31f9e8c1a&') no-repeat center center/cover;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
-<body class="bg-light text-center">
+<body>
 
-    <div class="container py-5">
-        <h1 class="mb-4">The Surfing Project en 3 points</h1>
-        
-        <div class="row g-4 justify-content-center">
-            <!-- Pas chère -->
-            <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://img.freepik.com/vecteurs-premium/icone-ligne-argent-isolee-fond-blanc_268104-19636.jpg" 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">The Surfing Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Le programme</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nos prochaines sessions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Session 1</a></li>
+                            <li><a class="dropdown-item" href="#">Session 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Aventure -->
+    <section class="hero text-center d-flex align-items-center" style="height: 60vh;">
+        <div class="container">
+            <h1 class="display-4">Partez à l'aventure</h1>
+            <p class="lead">Découvrez notre école de surf en peer-learning</p>
+            <div>
+                <a href="#" class="btn btn-primary btn-lg me-2">Je m'inscris à la prochaine session</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Je découvre le programme</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Points Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">The Surfing Project en 3 points</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div>
+                      <img src="https://img.freepik.com/vecteurs-premium/icone-ligne-argent-isolee-fond-blanc_268104-19636.jpg" 
                          class="card-img-top img-fluid" 
-                         alt="Icône de ligne d'argent isolée sur fond blanc">
-                    <div class="card-body">
-                        <h3 class="card-title">Pas chère</h3>
-                        <p class="card-text">Surfez sur la vague sans couler votre portefeuille ! Nos prix sont aussi doux qu’une brise marine et parfaits pour vous apprendre à dompter les vagues sans faire naufrage côté budget. Alors, prêt à surfer sans casser la tirelire ? 🏄‍♂️💸</p>
+                         alt="Icône de ligne d'argent isolée sur fond blanc">  
+                      <i class="bi bi-wallet2 fs-1 mb-3"></i>
+                        <h3>Pas chère</h3>
+                        <p>Surfez sur la vague sans couler votre portefeuille ! Nos prix sont doux, parfaits pour débuter.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Communauté -->
-            <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://img.freepik.com/vecteurs-libre/icone-travail-equipe-dessine-main_53876-113759.jpg" 
+                <div class="col-md-4">
+                    <div>
+                      <img src="https://img.freepik.com/vecteurs-libre/icone-travail-equipe-dessine-main_53876-113759.jpg" 
                          class="card-img-top img-fluid" 
-                         alt="Icône de travail d'équipe dessiné à la main">
-                    <div class="card-body">
-                        <h3 class="card-title">Communauté</h3>
-                        <p class="card-text">Rejoignez notre tribu de surfeurs ! Ici, on partage plus que des vagues : des fous rires, des anecdotes salées, et peut-être même un peu de crème solaire. Parce qu’ensemble, tout est plus fun, surtout avec les pieds dans l’eau ! 🌊👫</p>
+                         alt="Icône de travail d'équipe dessiné à la main">  
+                      <i class="bi bi-cup fs-1 mb-3"></i>
+                        <h3>Relax</h3>
+                        <p>Apprenez dans une ambiance chill, sans stress, comme une sieste sur la plage.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Relax -->
-            <div class="col-12 col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://img.freepik.com/vecteurs-premium/symbole-icone-du-fauteuil-fond-blanc_268104-19519.jpg" 
-                         class="card-img-top img-fluid" 
-                         alt="Symbole de l'icône du fauteuil sur fond blanc">
-                    <div class="card-body">
-                        <h3 class="card-title">Relax</h3>
-                        <p class="card-text">Détendez-vous, on s’occupe de tout ! Avec nous, pas besoin de stresser : c’est comme une sieste sur la plage, mais en mieux. Apprenez à surfer dans une ambiance aussi chill qu’un coucher de soleil sur l’océan. 🌅🛋️</p>
+                <div class="col-md-4">
+                    <div>
+                      <img src="https://img.freepik.com/vecteurs-premium/symbole-icone-du-fauteuil-fond-blanc_268104-19519.jpg" 
+                      class="card-img-top img-fluid" 
+                      alt="Symbole de l'icône du fauteuil sur fond blanc"> 
+                      <i class="bi bi-people fs-1 mb-3"></i>
+                        <h3>La communauté</h3>
+                        <p>Rejoignez une tribu de surfeurs et partagez des moments inoubliables !</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Témoignages</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://example.com/image1.jpg" class="card-img-top" alt="Surfing">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Surfing's not a sport, it's a way of life. It's a way of looking at that wave and saying, "Hey bud, let's party!"</p>
+                                <footer class="blockquote-footer">Jeff, <cite>Avril 2019</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="https://example.com/image2.jpg" class="card-img-top" alt="Vanlife Surfing">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Grâce à TSP, je fais le tour du monde avec mon van et fais du surf ! L'expérience était à refaire sans hésitation.</p>
+                                <footer class="blockquote-footer">Jean-Michel, <cite>Octobre 2018</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Prix</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Semaine d'essai</h3>
+                            <p class="display-4">0€</p>
+                            <p>Le kiff<br>À Bali<br>Pendant 1 semaine</p>
+                            <a href="#" class="btn btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Early Bird</h3>
+                            <p class="display-4">15€</p>
+                            <p>Le kiff<br>À Bali<br>Pendant 12 semaines</p>
+                            <a href="#" class="btn btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">En trois fois</h3>
+                            <p class="display-4">7€/mo</p>
+                            <p>Le kiff<br>À Bali<br>Pendant 12 semaines</p>
+                            <a href="#" class="btn btn-primary">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            &copy; Bootstrap, et The Surfing Project
+        </div>
+    </footer>
 </body>
 </html>

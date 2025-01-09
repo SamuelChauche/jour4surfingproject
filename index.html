@@ -1,217 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/60ca6e7f0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>The surfing project</title>
-  </head>
-  <body>
 
-<Header></Header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/60ca6e7f0c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>The surfing project</title>
+  <style>
+    .blur-image{
+      filter: blur(8px);
+    }
+  </style>
+</head>
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">The Surfing Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+      aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Le Programme</a>
+        </li>
 
-    <section
-    class="bg-dark text-white text-center py-5" style="background: url('img/surfeurgne.jpg') no-repeat top center/cover; height: 80vh; display: flex; align-items: center; justify-content: center;">
-      <div>
-          <h1 style="color: royalblue;">𝙋𝙖𝙧𝙩𝙚𝙯 𝙖̀ 𝙡'𝙖𝙫𝙚𝙣𝙩𝙪𝙧𝙚</h1>
-          <p class="lead" style="color: royalblue;">𝘿𝙚́𝙘𝙤𝙪𝙫𝙧𝙚𝙯 𝙎𝙪𝙧𝙛𝙞𝙣𝙜 𝙋𝙧𝙤𝙟𝙚𝙘𝙩</p>
-          <button class="btn btn-primary btn-lg">Rejoindre la prochaine session</button>
-        </div>
-      </section>
-  
-    <section class="container text-center my-5">
-      <h2 class="mb-4">The Surfing Project en 3 points</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <i class="bi bi-wallet2 display-4 mb-3"></i>
-          <h5>Pas chère</h5>
-          <p>Des coûts réduits, grâce à notre système collaboratif.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="bi bi-clock display-4 mb-3"></i>
-          <h5>Relax</h5>
-          <p>Des horaires flexibles, conçus pour votre détente et plaisir.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="bi bi-people display-4 mb-3"></i>
-          <h5>La communauté</h5>
-          <p>Rencontrez des surfeurs partageant la même passion.</p>
-        </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Nos Prochaines Sessions</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown03">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+  <section class="bg-dark text-white text-center py-5"
+    style="background: url('img/sunset.jpg') no-repeat center center/cover; height: 80vh; display: flex; align-items: center; justify-content: center;">
+    </div>
+ 
+    <div>
+      <h1 style="color: rgb(115, 148, 255);">𝙋𝙖𝙧𝙩𝙚𝙯 𝙖̀ 𝙡'𝙖𝙫𝙚𝙣𝙩𝙪𝙧𝙚</h1>
+      <p class="lead" style="color: royalblue;">Découvrez Surfing Project</p>
+      <button class="btn btn-primary btn-lg">Rejoindre la prochaine session</button>
+    </div>
+  </section>
+
+  <section class="container text-center my-5">
+    <h2 class="mb-4">The Surfing Project en 3 points</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="bi bi-wallet2 display-4 mb-3"></i>
+        <h5>Pas chère</h5>
+        <p>Des coûts réduits, grâce à notre système collaboratif.</p>
       </div>
-    </section>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-  </body>
- <header>
-    <p>
+      <div class="col-md-4">
+        <i class="bi bi-clock display-4 mb-3"></i>
+        <h5>Relax</h5>
+        <p>Des horaires flexibles, conçus pour votre détente et plaisir.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-people display-4 mb-3"></i>
+        <h5>La communauté</h5>
+        <p>Rencontrez des surfeurs partageant la même passion.</p>
+      </div>
+    </div>
+  </section>
 
-    </p>
- </header>
-  <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
-<div class="text-center">
-    
-   <h1>Témoignages</h1>
+  <div class="text-center">
 
-   <div class="Témoignage">
-    <div class="container">
+    <h1>Témoignages</h1>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
+    <div class="Témoignage">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card shadow-sm">
               <img src="img/surfpoubelle.jpg" alt="clochard">
-                <div class="card-body">
-                    <p class="card-text">Je me suis lever à 14h, enfiler un short sale et parti à la conquête de l'écume. Ma nouvelle philosophie de vie ? 'Pourquoi se presser quand on peut etre au RSA ?'</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="text-muted"> Sam, janvier 2025</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-<img src="img/van.jpg" alt="poubelle">
-
-            <div class="card-body">
-              <p class="card-text">J'ai toujours voulu conduire un van Volkswagen éclaté au sol ! J'ai conduit bourré avec Steeve le plus beau crackhead de la plage !</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="text-muted">Brendon, janvier 2025</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-</div>
-
-
-<div>
-    <div class="container" name ="pricing">
-        <div
-          class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
-            
-            
-              <title>Bootstrap</title>
-              <path
-                fill-rule="navbar-nav"
-                clip-rule="evenodd"
-                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                fill="currentColor"
-              ></path>
-            </svg>        
-          </a>
-        </div>
-
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Prix</h1>
-          <p class="fs-5 text-muted">
-          </p>
-        </div>
-
-      <main>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Semaine d'essai</h4>
-              </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  0€<small class="text-muted fw-light"></small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Le kiff</li>
-                  <li>À bali ou Lacanau</li>
-                  <li>Pendant 1 semaine</li>
-                  <li><s>Pret de materiel</s></li>
-                  <li><s>Assurance tous risques</s></li>
-                 
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  S'inscrire
-                </button>
+                <p class="card-text">Je me suis lever à 14h, enfiler un short sale et parti à la conquête de l'écume. 
+                  <br>Ma
+                  nouvelle philosophie de vie ? 'Pourquoi se presser quand on peut etre au RSA ?'</p>
+                  <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="text-muted"> Sam, janvier 2025</p>
+
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Early Bird</h4>
-              </div>
+            <div class="card shadow-sm">
+              <img src="img/van.jpg" alt="Van">
+
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  15€<small class="text-muted fw-light"></small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Le super kiff</li>
-                  <li>À bali ou Lacanau</li>
-                  <li>Pendant 12 semaines</li>
-                  <li>Pret de materiel</li>
-                  <li><s>Assurance tous risques</s></li>
-                  
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  S'inscrire
-                </button>
+                <p class="card-text">J'ai toujours voulu conduire un van Volkswagen éclaté au sol !
+                  <br> J'ai conduit bourré avec Steeve le plus beau crackhead de la plage !</p>
+                  <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="text-muted">Brendon, janvier 2025</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div
-                class="card-header py-3 text-white bg-primary border-primary"
-              >
-                <h4 class="my-0 fw-normal">En trois fois</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  30€<small class="text-muted fw-light">/m</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Le mega kiff</li>
-                  <li>À bali ou Lacanau</li>
-                  <li>Pendant 12 semaines</li>
-                  <li>Pret de materiel </li>
-                  <li>Assurance tous risques </li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  S'inscrire
-                </button>
+
+        </div>
+
+
+        <div>
+          <div class="container" name="pricing">
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+
+                <title>Bootstrap</title>
+                <path fill-rule="navbar-nav" clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                  fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h1 class="display-4 fw-normal">Prix</h1>
+              <p class="fs-5 text-muted">
+              </p>
+            </div>
+
+            <main>
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Semaine d'essai</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">
+                        0€<small class="text-muted fw-light"></small>
+                      </h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Le kiff</li>
+                        <li>À bali ou Lacanau</li>
+                        <li>Pendant 1 semaine</li>
+                        <li><s>Pret de materiel</s></li>
+                        <li><s>Assurance tous risques</s></li>
+
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                        S'inscrire
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Early Bird</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">
+                        15€<small class="text-muted fw-light"></small>
+                      </h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Le super kiff</li>
+                        <li>À bali ou Lacanau</li>
+                        <li>Pendant 12 semaines</li>
+                        <li>Pret de materiel</li>
+                        <li><s>Assurance tous risques</s></li>
+
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">
+                        S'inscrire
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                      <h4 class="my-0 fw-normal">En trois fois</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">
+                        30€<small class="text-muted fw-light">/m</small>
+                      </h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Le mega kiff</li>
+                        <li>À bali ou Lacanau</li>
+                        <li>Pendant 12 semaines</li>
+                        <li>Pret de materiel </li>
+                        <li>Assurance tous risques </li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg btn-primary">
+                        S'inscrire
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-  </div>
+          </body>
           <footer>
-          @Bootstrap, et @The Surfing Project
-        </footer>
-        </div>
-  </body>
-  <footer>
+            @Bootstrap, @The Surfing Project
+          </footer>
 
-
-
-  </footer>
-  
 </html>
